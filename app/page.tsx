@@ -82,7 +82,7 @@ export default function Home() {
       </section>
       <section className="bg-pattern h-screen flex flex-col items-center justify-center space-y-6">
         <div className="font-bold text-3xl text-white text-center">
-          Our Philosophy: "Cry, Laugh, Earn"
+          Our Philosophy: &quot;Cry, Laugh, Earn&quot;
         </div>
         <div>
           <Image

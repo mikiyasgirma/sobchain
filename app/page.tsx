@@ -170,27 +170,27 @@ export default function Home() {
           1. How do I start creating memes with Sobchain&apos;s template?
         </div>
         <div className="text-[18px]">
-          Simply join our Telegram channel, and you'll find the meme template
-          pinned at the top of the chat. Download the template directly to your
-          device to start creating your memes.
+          Simply join our Telegram channel, and you&apos;ll find the meme
+          template pinned at the top of the chat. Download the template directly
+          to your device to start creating your memes.
         </div>
         <div className="w-full h-[2px] bg-white opacity-50"></div>
         <div className="text-[18px] font-semibold">
           1. How do I start creating memes with Sobchain&apos;s template?
         </div>
         <div className="text-[18px]">
-          Simply join our Telegram channel, and you'll find the meme template
-          pinned at the top of the chat. Download the template directly to your
-          device to start creating your memes.
+          Simply join our Telegram channel, and you&apos;ll find the meme
+          template pinned at the top of the chat. Download the template directly
+          to your device to start creating your memes.
         </div>
         <div className="w-full h-[2px] bg-white opacity-50"></div>
         <div className="text-[18px] font-semibold">
           1. How do I start creating memes with Sobchain&apos;s template?
         </div>
         <div className="text-[18px]">
-          Simply join our Telegram channel, and you'll find the meme template
-          pinned at the top of the chat. Download the template directly to your
-          device to start creating your memes.
+          Simply join our Telegram channel, and you&apos;ll find the meme
+          template pinned at the top of the chat. Download the template directly
+          to your device to start creating your memes.
         </div>
         <div className="w-full h-[2px] bg-white opacity-50"></div>
       </section>

@@ -5,8 +5,8 @@ import FlashCard from "./components/FlashCard";
 
 export default function Home() {
   return (
-    <main className="bg-[#131732] ">
-      <section className="bg-hero px-4 py-6 text-white">
+    <main className="bg-[#131732] text-white">
+      <section className="bg-hero px-4 py-6 ">
         <nav className="w-full flex justify-between">
           <div className="text-[25px]">SobChain</div>
           <HiOutlineMenuAlt4 size={36} color="#ffffff" />
@@ -80,7 +80,7 @@ export default function Home() {
           rewards you reap.
         </div>
       </section>
-      <section className="bg-pattern h-screen flex flex-col items-center justify-center space-y-6">
+      <section className="bg-pattern flex flex-col items-center h-screen justify-end space-y-6 py-12">
         <div className="font-bold text-3xl text-white text-center">
           Our Philosophy: &quot;Cry, Laugh, Earn&quot;
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
             width={381}
             height={463}
           />
-          <div className="bg-[#041061] text-[18px] text-white w-[381px] h-[144px] text-center flex flex-col items-center justify-center">
+          <div className="bg-[#041061] rounded-b-3xl text-[18px] text-white w-[381px] h-[144px] text-center flex flex-col items-center justify-center">
             <div className="">1. Cry 😭</div>
             <div className="font-bold text-[18px]">
               Share your tear-jerking memes or those moments of laughable
@@ -99,6 +99,99 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="flex flex-col items-center  justify-end space-y-6 py-12">
+        <div>
+          <Image
+            src="/assets/image-4.png"
+            alt="Image four"
+            width={381}
+            height={463}
+          />
+          <div className="bg-[#041061] rounded-b-3xl text-[18px] text-white w-[381px] h-[144px] text-center flex flex-col items-center justify-center">
+            <div className="">2. Lough 😂</div>
+            <div className="font-bold text-[18px]">
+              Engage with a community that loves to laugh as much as you do.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col items-center  justify-end space-y-6 py-12">
+        <div>
+          <Image
+            src="/assets/image-5.jpg"
+            alt="Image five"
+            width={381}
+            height={463}
+          />
+          <div className="bg-[#041061] rounded-b-3xl text-[18px] text-white w-[381px] h-[144px] text-center flex flex-col items-center justify-center">
+            <div className="">3. Earn 💵</div>
+            <div className="font-bold text-[18px]">
+              Collect Sobcoins as you post and interact. The funnier you are,
+              the richer you become!
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="px-4 flex flex-col items-center justify-center space-y-4 py-12">
+        <div className="text-white text-3xl">Buy Tokens</div>
+        <button className="w-[382px] text-[18px] font-medium rounded-[30px] h-[69px] border-4 border-[#CD007A] bg-slate-400 ">
+          1478 9632 8521 7856
+        </button>
+      </section>
+      <section className="px-4 py-12">
+        <div className="bg-[#041061] rounded-[30px] text-white w-[390px] h-[397px] flex flex-col items-center justify-center space-y-4 px-4">
+          <Image src="/assets/20.png" alt="icon" height={89} width={89} />
+          <div className="font-medium text-2xl">
+            Chill With Locked Liquidity
+          </div>
+          <div className="font-medium text-[18px] text-center">
+            Relax, we&apos;ve locked the liquidity! This means you can trade
+            memes in total chill mode, knowing everything&apos;s secure. Just
+            lean back, share laughs, and let the good times roll.
+          </div>
+        </div>
+      </section>
+      <section className="px-4 ">
+        <div className="bg-[#041061] rounded-[30px] text-white w-[390px] h-[397px] flex flex-col items-center justify-center space-y-4 px-4">
+          <Image src="/assets/21.png" alt="icon" height={89} width={89} />
+          <div className="font-medium text-2xl">Tax? What Tax?</div>
+          <div className="font-medium text-[18px] text-center">
+            Enjoy a completely tax-free experience on Sobchain! No hidden fees,
+            no surprises—just you, your memes, and uninterrupted fun. Share,
+            laugh, and connect without a worry.
+          </div>
+        </div>
+      </section>
+      <section className="px-4 py-12 text-white space-y-6">
+        <div className="font-bold text-3xl text-center">FAQ</div>
+        <div className="text-[18px] font-semibold">
+          1. How do I start creating memes with Sobchain&apos;s template?
+        </div>
+        <div className="text-[18px]">
+          Simply join our Telegram channel, and you'll find the meme template
+          pinned at the top of the chat. Download the template directly to your
+          device to start creating your memes.
+        </div>
+        <div className="w-full h-[2px] bg-white opacity-50"></div>
+        <div className="text-[18px] font-semibold">
+          1. How do I start creating memes with Sobchain&apos;s template?
+        </div>
+        <div className="text-[18px]">
+          Simply join our Telegram channel, and you'll find the meme template
+          pinned at the top of the chat. Download the template directly to your
+          device to start creating your memes.
+        </div>
+        <div className="w-full h-[2px] bg-white opacity-50"></div>
+        <div className="text-[18px] font-semibold">
+          1. How do I start creating memes with Sobchain&apos;s template?
+        </div>
+        <div className="text-[18px]">
+          Simply join our Telegram channel, and you'll find the meme template
+          pinned at the top of the chat. Download the template directly to your
+          device to start creating your memes.
+        </div>
+        <div className="w-full h-[2px] bg-white opacity-50"></div>
       </section>
     </main>
   );

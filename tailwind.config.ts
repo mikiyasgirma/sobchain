@@ -14,6 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         hero: "url(/assets/digital-art-beautiful-mountains-1.jpg)",
       },
+      fontFamily: {
+        "default-font": ["var(--default-font)"],
+      },
     },
   },
   plugins: [],

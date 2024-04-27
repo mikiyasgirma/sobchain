@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={orbiton.className}>{children}</body>
+    <html lang="en" className={`${orbiton.variable} `}>
+      <body>{children}</body>
     </html>
   );
 }

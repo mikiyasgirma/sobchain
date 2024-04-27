@@ -5,8 +5,8 @@ import FlashCard from "./components/FlashCard";
 
 export default function Home() {
   return (
-    <main className="">
-      <section className="bg-hero h-screen px-4 py-6 text-white">
+    <main className="bg-[#131732] ">
+      <section className="bg-hero px-4 py-6 text-white">
         <nav className="w-full flex justify-between">
           <div className="text-[25px]">SobChain</div>
           <HiOutlineMenuAlt4 size={36} color="#ffffff" />
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#131732] py-6">
+      <section className="py-6">
         <div className="border-gradient mb-6"></div>
         <Image
           src="/assets/image-1.jpg"
@@ -59,7 +59,7 @@ export default function Home() {
           crypto.
         </div>
       </section>
-      <section className="bg-[#131732] py-6">
+      <section className=" py-6">
         <div className="flex justify-end">
           <div className="border-gradient-right mb-6"></div>
         </div>
@@ -78,6 +78,26 @@ export default function Home() {
           bigger the sob value. But here’s the twist—rewards are earned from the
           smiles you spread! The more your memes make others laugh, the more
           rewards you reap.
+        </div>
+      </section>
+      <section className="bg-pattern h-screen flex flex-col items-center justify-center space-y-6">
+        <div className="font-bold text-3xl text-white text-center">
+          Our Philosophy: "Cry, Laugh, Earn"
+        </div>
+        <div>
+          <Image
+            src="/assets/image-3.jpg"
+            alt="Image thre"
+            width={381}
+            height={463}
+          />
+          <div className="bg-[#041061] text-[18px] text-white w-[381px] h-[144px] text-center flex flex-col items-center justify-center">
+            <div className="">1. Cry 😭</div>
+            <div className="font-bold text-[18px]">
+              Share your tear-jerking memes or those moments of laughable
+              despair.
+            </div>
+          </div>
         </div>
       </section>
     </main>

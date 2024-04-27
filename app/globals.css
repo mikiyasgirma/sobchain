@@ -52,3 +52,8 @@ body {
   background: linear-gradient(90deg, #cd007a 0%, #131732 100%);
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+.bg-pattern {
+  background-image: url("/assets/pattern.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,19 +28,19 @@ const Nav = () => {
       {/* Desktop Navigation */}
       <ul className="hidden  md:flex text-base space-x-5">
         <li>
-          <a href="#" className="hover:text-gray-300">
+          <Link href="#about" className="hover:text-gray-300">
             ABOUT
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-gray-300">
+          <Link href="#faq" className="hover:text-gray-300">
             FAQ
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-gray-300">
+          <Link href="#" className="hover:text-gray-300">
             MEMES
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -71,21 +72,20 @@ const Nav = () => {
               </button>
               <ul className="flex flex-col space-y-5  font-goldman font-bold pt-[73.9px] items-end">
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <Link href="#about" className="hover:text-gray-300">
                     ABOUT
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <Link href="#faq" className="hover:text-gray-300">
                     FAQ
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-300">
+                  <Link href="#" className="hover:text-gray-300">
                     MEMES
-                  </a>
+                  </Link>
                 </li>
-              
               </ul>
              <button onClick={() =>scrollToSection('buytoken')} className="mt-16 w-full h-[55px] text-base bg-white hover:text-white hover:bg-[#CD007A] text-[#CD007A] px-4 py-2 rounded-3xl">
                 Buy Sobchain
@@ -93,8 +93,6 @@ const Nav = () => {
             </motion.div>
           )}
         </AnimatePresence>
-
-
       </div>
     </nav>
   );

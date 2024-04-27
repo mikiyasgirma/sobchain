@@ -1,10 +1,38 @@
+'use client'
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import FlashCard from "./components/FlashCard";
 import SimpleSlider from "./components/Swiper";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [showTooltip, setShowTooltip] = useState(false);
+ 
+  const cardvals = [
+    "Hilariously Heartwarming",
+"Laughably Lovable",
+"Absurdly Amusing",
+"Comically Captivating",
+"Jokingly Joyful",
+"Madly Memorable",
+  ];
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      // Show tooltip
+      setShowTooltip(true);
+
+      // Hide tooltip after 2 seconds
+      setTimeout(() => {
+        setShowTooltip(false);
+      }, 2000);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
+
   return (
     <main className=" text-white">
       <div className="absolute z-[-1] w-full h-[1579px] top-0 md:top-0 max-w-full bg-gradient-to-b to-[#131732] from-transparent" ></div>
@@ -34,14 +62,9 @@ export default function Home() {
         </div>
         <div className="py-10 md:py-98">
           <Marquee speed={50}>
-            <FlashCard />
-            <FlashCard />
-            <FlashCard />
-            <FlashCard />
-            <FlashCard />
-            <FlashCard />
-            <FlashCard />
-            <FlashCard />
+            {
+              cardvals.map((val, index) => <FlashCard key={index} title={val} />)
+            }
           </Marquee>
         </div>
         <div className="py-10 md:py-56 space-y-6 md:space-y-24  flex flex-col items-center">
@@ -57,7 +80,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="py-6 md:pb-52">
+      <section id="about" className="py-6 md:pb-52">
         <div className="md:ml-80 h-3 w-[364px] md:w-[600px] mb-6 bg-gradient-to-r from-[#cd007a] to-[#131732] "></div>
         <div className="flex flex-col md:flex-row md:space-x-32">
           <Image
@@ -174,11 +197,14 @@ export default function Home() {
       </div>
       <section id="buytoken" className="px-4 md:pt-52 flex flex-col items-center justify-center space-y-4 py-12">
         <div className="text-white text-3xl">Buy Tokens</div>
-        <button className="w-[382px] md:w-[706px] md:h-[90px] text-[18px] font-medium rounded-[30px] h-[69px] border-4 border-[#CD007A] bg-[#42455b] ">
-          1478 9632 8521 7856
-        </button>
+        <div className="relative inline-block">
+          <button onClick={() => copyToClipboard('CyasjnYU4k2PYb5iqYzenWR8wHFmEAE6KdkhHCJbAh9i')} className="w-[382px] md:w-[706px] md:h-[90px] text-[18px] font-medium rounded-[30px] h-[69px] border-4 border-[#CD007A] bg-[#42455b] ">
+            CyasjnYU4k2PYb5iqYzenWR8wHFmEAE6KdkhHCJbAh9i
+          </button>
+          {showTooltip && <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 rounded text-xs">Copied!</div>}
+        </div>
       </section>
-      <div className="flex flex-col md:flex-row items-center justify-center space-x-11">
+      <div className="flex flex-col md:flex-row items-center justify-center md:space-x-11">
         <section className="px-4 py-12">
           <div className="bg-[#041061] rounded-[30px] text-white w-[390px] h-[397px] flex flex-col items-center justify-center space-y-4 px-4">
             <Image src="/assets/20.png" alt="icon" height={89} width={89} />
@@ -204,7 +230,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="px-4 md:px-52 md:pt-52 py-12 text-white space-y-6">
+      <section id="faq" className="px-4 md:px-52 md:pt-52 py-12 text-white space-y-6">
         <div className="font-bold text-3xl text-center">FAQ</div>
         <div className="text-[18px] font-semibold">
           How do I start creating memes with Sobchain&apos;s template?
@@ -230,7 +256,7 @@ export default function Home() {
         </div>
         <div className="w-full h-[2px] bg-white opacity-50"></div>
         <div className="text-[18px] font-semibold">
-          Let&apos;s address the elephant in the room:
+          Why is Sobchain&apos;s liquidity pool smaller, and how can I help?
         </div>
         <div className="text-[18px]">
           Our liquidity pool might be on the smaller side, despite us pouring everything we&apos;ve got into it. If you love what Sobchain is building, consider contributing to the pool. We&apos;ve burned our LP tokens, so rest assured, there&apos;s no risk of us pulling out. Your support helps us grow and secure a fun, stable future for all!

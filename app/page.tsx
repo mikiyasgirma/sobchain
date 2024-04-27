@@ -33,10 +33,51 @@ export default function Home() {
           </div>
           <div className="text-center">
             Where else can tears turn into treasure and smiles into rewards?
-            Only here at Sobchain! We’re not just a meme coin; we're a movement.
-            We blend humor, blockchain technology, and a sprinkle of tears to
-            create the most joyously innovative currency in the digital realm.
+            Only here at Sobchain! We&apos;re not just a meme coin; we&apos;re a
+            movement. We blend humor, blockchain technology, and a sprinkle of
+            tears to create the most joyously innovative currency in the digital
+            realm.
           </div>
+        </div>
+      </section>
+      <section className="bg-[#131732] py-6">
+        <div className="border-gradient mb-6"></div>
+        <Image
+          src="/assets/image-1.jpg"
+          alt="Image One"
+          height={360}
+          width={430}
+        />
+        <div className="font-bold text-2xl text-white px-4 py-6">
+          Who Are We?
+        </div>
+        <div className="text-white px-4">
+          We are a community of meme lovers, tech geeks, and blockchain
+          enthusiasts who believe that every sob has a silver lining. Born from
+          the viral waves of the internet&apos;s funniest corners, Sobchain aims
+          to bring a little light-heartedness to the sometimes-serious world of
+          crypto.
+        </div>
+      </section>
+      <section className="bg-[#131732] py-6">
+        <div className="flex justify-end">
+          <div className="border-gradient-right mb-6"></div>
+        </div>
+        <Image
+          src="/assets/image-2.jpg"
+          alt="Image One"
+          height={360}
+          width={430}
+        />
+        <div className="font-bold text-2xl text-white px-4 py-6">
+          What Do We Do?
+        </div>
+        <div className="text-white px-4">
+          With Sobchain, every transaction is a reason to smile. Our platform
+          allows you to earn coins by sharing memes. The sadder the meme, the
+          bigger the sob value. But here’s the twist—rewards are earned from the
+          smiles you spread! The more your memes make others laugh, the more
+          rewards you reap.
         </div>
       </section>
     </main>

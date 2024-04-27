@@ -34,3 +34,21 @@ body {
 .border-text {
   -webkit-text-stroke: 1px black;
 }
+.border-gradient {
+  /* Rectangle 2 */
+
+  width: 364px;
+  height: 12px;
+  left: 0px;
+
+  background: linear-gradient(90deg, #cd007a 0%, #131732 100%);
+}
+.border-gradient-right {
+  /* Rectangle 3 */
+  width: 369px;
+  height: 13px;
+  left: 434px;
+
+  background: linear-gradient(90deg, #cd007a 0%, #131732 100%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}

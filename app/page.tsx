@@ -2,6 +2,7 @@ import Image from "next/image";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import Marquee from "react-fast-marquee";
 import FlashCard from "./components/FlashCard";
+import SimpleSlider from "./components/Swiper";
 
 export default function Home() {
   return (
@@ -192,6 +193,32 @@ export default function Home() {
           device to start creating your memes.
         </div>
         <div className="w-full h-[2px] bg-white opacity-50"></div>
+      </section>
+      <section className="px-4 space-y-4">
+        <div className="font-bold text-3xl">Join Now!</div>
+        <div className="text-[18px] font-light">
+          Dive headfirst into the whimsical world of Sobchain and let the
+          laughter ring out! With Sobchain, every meme is a golden opportunity
+          and every chuckle is a chance to shine. Remember, with Sobchain in
+          your digital wallet, every day is an adventure filled with joy and
+          rewards just waiting to happen.
+        </div>
+      </section>
+      <section className="flex flex-col items-center justify-center py-12">
+        <div className="flex space-x-4">
+          <Image
+            src="/assets/Vector.png"
+            alt="Telegram"
+            width={85}
+            height={85}
+          />
+          <Image src="/assets/owl.png" alt="Owl" width={79} height={79} />
+          <Image src="/assets/x.png" alt="x" width={79} height={79} />
+        </div>
+      </section>
+      <section className="py-12 px-4">
+        <div className="w-full h-1 bg-[#ffffff] opacity-50"></div>
+        <div className="text-center py-4">Sohba 2024</div>
       </section>
     </main>
   );

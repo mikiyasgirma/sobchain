@@ -2,20 +2,20 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import FlashCard from "./components/FlashCard";
-import SimpleSlider from "./components/Swiper";
+import MemeCarousel from "./components/MemeCarousel";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
   const [showTooltip, setShowTooltip] = useState(false);
- 
+
   const cardvals = [
     "Hilariously Heartwarming",
-"Laughably Lovable",
-"Absurdly Amusing",
-"Comically Captivating",
-"Jokingly Joyful",
-"Madly Memorable",
+    "Laughably Lovable",
+    "Absurdly Amusing",
+    "Comically Captivating",
+    "Jokingly Joyful",
+    "Madly Memorable",
   ];
 
   const copyToClipboard = async (text: string) => {
@@ -263,6 +263,9 @@ export default function Home() {
         </div>
         <div className="w-full h-[2px] bg-white opacity-50"></div>
       </section>
+      <div className="flex md:pt-40 py-16 items-center justify-center">
+        <MemeCarousel />
+      </div>
       <section className="px-4 md:px-52 space-y-4 md:pt-52 flex flex-col md:space-y-8 items-center">
         <div className="font-bold text-center text-3xl md:text-5xl">Join Now!</div>
         <div className="text-[18px] font-light text-center md:w-1/2 leading-loose ">
@@ -283,7 +286,7 @@ export default function Home() {
               height={85}
             />
           </Link>
-          <Link href="">
+          <Link href="https://dexscreener.com/solana/2ytjzgzhw4vmbgpyfdnxd2nqmqvbxaivpu2am5vrubfe">
             <Image src="/assets/owl.png" alt="Owl" width={79} height={79} />
           </Link>
           <Link href="https://twitter.com/sobchain">

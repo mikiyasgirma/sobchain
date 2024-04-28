@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${orbiton.className} `}>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="20" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="bg-[#131732] text-white">
         <Nav />
